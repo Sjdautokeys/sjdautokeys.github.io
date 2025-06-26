@@ -167,30 +167,40 @@
     width: 100%;
     box-sizing: border-box;
     }
+    @keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+.header-inner {
+  animation: slideIn 0.8s ease-out forwards;
+}
   </style>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-<header style="background-color: #142f44; padding: 1.5rem 1rem; width: 100%;">
-  <div class="header-container" style="display: flex; align-items: center; justify-content: space-between; max-width: 1000px; margin: 0 auto;">
+<header style="background-color: #142f44; padding: 1.5rem; width: 100%;">
+  <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 1rem;">
     
-    <!-- Left section: logo + text -->
-    <div class="header-left" style="display: flex; align-items: center; gap: 1rem;">
-      <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" 
-           alt="SJD Logo Left" 
-           style="width: 60px; height: auto;">
-      <div style="color: #c1c81b;">
-        <h1 style="margin: 0; font-size: 2rem;">SJD Auto Keys</h1>
-        <p style="margin: 0.5rem 0;">Vehicle Key Replacement Services based in Frodsham, Cheshire</p>
-      </div>
+    <!-- Left logo -->
+    <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" 
+         alt="SJD Logo Left" 
+         style="width: 60px; height: auto;">
+
+    <!-- Header text -->
+    <div style="text-align: center; color: #c1c81b;">
+      <h1 style="margin: 0; font-size: 2rem;">SJD Auto Keys</h1>
+      <p style="margin: 0.5rem 0;">Vehicle Key Replacement Services based in Frodsham, Cheshire</p>
     </div>
 
     <!-- Right logo -->
-    <div class="header-right">
-      <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" 
-           alt="SJD Logo Right" 
-           style="width: 60px; height: auto;">
-    </div>
+    <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" 
+         alt="SJD Logo Right" 
+         style="width: 60px; height: auto;">
   </div>
 </header>
 
