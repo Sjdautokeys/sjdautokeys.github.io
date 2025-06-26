@@ -139,10 +139,11 @@
     }
     .service-images {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
       margin-bottom: 1rem;
-    }
+}
     .service-images img {
       max-width: 100px;
       height: auto;
@@ -185,7 +186,7 @@
     <!-- Left image with rounded corners -->
     <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/fobs.jpg" 
          alt="fobs" 
-         style="width: 120px; height: auto; flex-shrink: 0; border-radius: 12px;">
+         style="max-width: 100%; width: 120px;">
 
     <!-- Services list -->
     <ul style="margin: 0; flex: 1; min-width: 200px; list-style: none; padding: 0;">
@@ -197,7 +198,7 @@
     <!-- Right image with rounded corners -->
     <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/KM100.jpg" 
          alt="KM100 tool" 
-         style="width: 130px; height: auto; flex-shrink: 0; border-radius: 12px;">
+         style="max-width: 100%; width: 120px;">
   </div>
 
   <p style="text-align: center;">
