@@ -1,102 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+ <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AutoRepair",
+  "name": "SJD Auto Keys",
+  "image": "https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png",
+  "@id": "https://sjdautokeys.github.io",
+  "url": "https://sjdautokeys.github.io",
+  "telephone": "+447826845978",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Frodsham",
+    "addressLocality": "Frodsham",
+    "addressRegion": "Cheshire",
+    "postalCode": "WA6",
+    "addressCountry": "GB"
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "20:00"
+  },
+  "sameAs": [
+    "https://wa.me/447826845978"
+  ]
+}
+</script>
+
+ <link rel="icon" href="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" type="image/png">
+<meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SJD Auto Keys</title>
-  <link rel="icon" href="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" type="image/png">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+ <!-- SEO meta tags -->
+  <meta name="description" content="Affordable vehicle key replacement, cloning, and programming services in Cheshire. Call or WhatsApp for a quote.">
+  <meta name="keywords" content="car key replacement, key programming, vehicle keys, Cheshire, auto keys">
+ <!-- Open Graph meta tags -->
+<meta property="og:title" content="SJD Auto Keys" />
+<meta property="og:description" content="Affordable vehicle key replacement, cloning, and programming services in Cheshire." />
+<meta property="og:image" content="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" />
+<meta property="og:url" content="https://sjdautokeys.github.io" />
+<meta property="og:type" content="website" />
+
+ <title>SJD Auto Keys</title>
   <style>
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
       background-color: #0a1e2d;
       color: #e1e1e1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .banner {
+      width: 100%;
+      max-width: 900px;
+      height: 40px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 2rem;
+    }
+    .stripe-yellow {
+      background-color: #fcd116;
+      flex: 1;
+    }
+    .stripe-green {
+      background-color: #007847;
+      flex: 2;
+    }
+    .stripe-red {
+      background-color: #ce1126;
+      flex: 3;
     }
     header {
       background-color: #142f44;
+      padding: 1.5rem;
       text-align: center;
-      padding: 1rem;
-    }
-    header img {
-      width: 50px;
-      height: auto;
-      margin: 0 10px;
+      width: 100%;
     }
     header h1 {
-      font-size: 1.8rem;
-      color: #c1c81b;
-      margin: 0.5rem 0 0.25rem;
-    }
-    header p {
       margin: 0;
-      font-size: 0.95rem;
+      font-size: 2rem;
+      color: #c1c81b;
     }
-
-    .banner {
-      display: flex;
-      height: 30px;
-      max-width: 900px;
-      margin: 1rem auto;
-    }
-    .stripe-yellow { background-color: #fcd116; flex: 1; }
-    .stripe-green { background-color: #007847; flex: 2; }
-    .stripe-red { background-color: #ce1126; flex: 3; }
-
     section {
-      padding: 1.5rem 1rem;
-      max-width: 900px;
-      margin: auto;
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
     }
     h2 {
       color: #c1c81b;
       border-bottom: 1px solid #c1c81b;
       padding-bottom: 0.5rem;
-      text-align: center;
     }
     ul {
       list-style: none;
       padding-left: 0;
-      margin: 0.5rem 0;
     }
     ul li::before {
-      content: "✔ ";
+      content: "\2713\0020";
       color: #c1c81b;
-      margin-right: 5px;
     }
-
-    .service-images {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      flex-wrap: wrap;
-      gap: 1rem;
-      margin: 1rem 0;
-    }
-    .service-images img {
-      max-width: 120px;
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .pricing {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-    }
-    .pricing ul {
-      padding-left: 1rem;
-      line-height: 1.6;
-    }
-
     .contact {
       background-color: #142f44;
+      padding: 2rem;
       text-align: center;
-      padding: 2rem 1rem;
+      margin-top: 2rem;
     }
-    .contact a {
-      color: #c1c81b;
-      text-decoration: none;
+    .contact p {
+      margin: 0.5rem 0;
     }
     .cta {
       display: inline-block;
@@ -105,54 +125,52 @@
       background-color: #c1c81b;
       color: #142f44;
       font-weight: bold;
-      border-radius: 4px;
       text-decoration: none;
+      border-radius: 4px;
     }
-
     footer {
       text-align: center;
       padding: 1rem;
       font-size: 0.9rem;
       color: #999;
     }
-
     a {
       color: #c1c81b;
     }
-
-    /* WhatsApp floating button */
-    .whatsapp-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background-color: #25d366;
-      color: white;
-      padding: 12px 18px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: bold;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      z-index: 1000;
+    .service-images {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
     }
-
-    @media (min-width: 600px) {
-      .pricing {
-        flex-direction: row;
-        justify-content: space-between;
-      }
+    .service-images img {
+      max-width: 100px;
+      height: auto;
     }
   </style>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
+<header style="background-color: #142f44; padding: 1.5rem; width: 100%;">
+  <div style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 1rem;">
+    
+    <!-- Left logo -->
+    <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" 
+         alt="SJD Logo Left" 
+         style="width: 60px; height: auto;">
 
-  <header>
-    <div>
-      <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" alt="Logo left">
-      <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" alt="Logo right">
+    <!-- Header text -->
+    <div style="text-align: center; color: #c1c81b;">
+      <h1 style="margin: 0; font-size: 2rem;">SJD Auto Keys</h1>
+      <p style="margin: 0.5rem 0;">Vehicle Key Replacement Services based in Frodsham, Cheshire</p>
     </div>
-    <h1>SJD Auto Keys</h1>
-    <p>Vehicle Key Replacement Services – Frodsham, Cheshire</p>
-  </header>
+
+    <!-- Right logo -->
+    <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/favicon.png" 
+         alt="SJD Logo Right" 
+         style="width: 60px; height: auto;">
+  </div>
+</header>
 
   <div class="banner">
     <div class="stripe-yellow"></div>
@@ -161,79 +179,99 @@
   </div>
 
   <section>
-    <h2>Our Services</h2>
-    <div class="service-images">
-      <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/fobs.jpg" alt="Fobs">
-      <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/KM100.jpg" alt="KM100">
-    </div>
-    <ul>
+  <h2 style="text-align: center;">Our Services</h2>
+  <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap;">
+    
+    <!-- Left image with rounded corners -->
+    <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/fobs.jpg" 
+         alt="fobs" 
+         style="width: 120px; height: auto; flex-shrink: 0; border-radius: 12px;">
+
+    <!-- Services list -->
+    <ul style="margin: 0; flex: 1; min-width: 200px; list-style: none; padding: 0;">
       <li>Replacement Car Keys</li>
       <li>Key Cloning & Programming</li>
       <li>Spare Car Keys</li>
     </ul>
-    <p style="text-align: center;">
-      <a href="#pricing">See estimated quote by vehicle make</a>
-    </p>
-  </section>
+
+    <!-- Right image with rounded corners -->
+    <img src="https://raw.githubusercontent.com/Sjdautokeys/sjdautokeys.github.io/main/KM100.jpg" 
+         alt="KM100 tool" 
+         style="width: 130px; height: auto; flex-shrink: 0; border-radius: 12px;">
+  </div>
+
+  <p style="text-align: center;">
+   <a href="#estimated-pricing">See estimated quote by vehicle make</a>
+  </p>
+</section>
+
 
   <section>
-    <h2>Areas Covered</h2>
-    <p style="text-align: center;">Frodsham, Helsby, Runcorn, Cheshire and surrounding areas.</p>
+    <h2 style="text-align: center;">Areas Covered</h2>
+    <p>Frodsham, Helsby, Runcorn, Cheshire and surrounding areas.</p>
   </section>
 
-  <section id="pricing">
-    <h2>Estimated Pricing</h2>
-    <p style="text-align: center;">
-      Prices by make, including standard remote fob & key cutting.<br>
-      May vary by model and year.
-    </p>
-    <div class="pricing">
-      <ul>
-        <li><strong>Ford</strong> (2002–2017) – £110–£140</li>
-        <li><strong>Vauxhall</strong> (2004–2017) – £100–£130</li>
-        <li><strong>Volkswagen</strong> (2002–2015) – £120–£150</li>
-        <li><strong>BMW</strong> (2002–2015) – £140–£180</li>
-        <li><strong>Audi</strong> (2002–2015) – £150–£190</li>
-        <li><strong>Peugeot</strong> (2002–2016) – £100–£130</li>
-        <li><strong>Renault</strong> (2003–2014) – £110–£140</li>
-      </ul>
-      <ul>
-        <li><strong>Kia</strong> (2005–2016) – £100–£120</li>
-        <li><strong>Hyundai</strong> (2005–2016) – £100–£120</li>
-        <li><strong>Toyota</strong> (2002–2012) – £110–£140</li>
-        <li><strong>Nissan</strong> (2002–2012) – £100–£130</li>
-        <li><strong>Mercedes</strong> (2002–2013) – £160–£200</li>
-        <li><strong>Land/Range Rover</strong> (2002–2015) – £180–£250</li>
-        <li><strong>Other Makes</strong> – POA</li>
-      </ul>
-    </div>
-    <p style="text-align: center; margin-top: 1rem;">
-      We specialise in vehicles up to 2017. For newer models, contact us — we may still be able to help.
-    </p>
-    <p style="text-align: center;">
-      <a href="https://wa.me/447826845978">Message us on WhatsApp for an exact quote</a>
-    </p>
-  </section>
+<section id="estimated-pricing" style="padding: 2rem;">
+  <h2 style="text-align: center;">Estimated Pricing</h2>
+  <p style="max-width: 800px; margin: 0 auto; text-align: center;">
+    Estimated prices by vehicle make (including key cutting and standard remote fob).<br>
+    Prices may vary by model and year:
+  </p>
 
-  <div class="banner">
+  <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 1.5rem; max-width: 900px; margin-left: auto; margin-right: auto;">
+    <!-- Left column -->
+    <ul style="flex: 1; min-width: 260px; max-width: 400px; list-style: none; padding-left: 0; line-height: 1.6;">
+      <li><strong>Ford</strong> (2002–2017) – £110–£140</li>
+      <li><strong>Vauxhall</strong> (2004–2017) – £100–£130</li>
+      <li><strong>Volkswagen</strong> (2002–2015) – £120–£150</li>
+      <li><strong>BMW</strong> (2002–2015) – £140–£180</li>
+      <li><strong>Audi</strong> (2002–2015) – £150–£190</li>
+      <li><strong>Peugeot</strong> (2002–2016) – £100–£130</li>
+      <li><strong>Renault</strong> (2003–2014) – £110–£140</li>
+    </ul>
+
+    <!-- Right column -->
+    <ul style="flex: 1; min-width: 260px; max-width: 600px; list-style: none; padding-left: 0; line-height: 1.6;">
+      <li><strong>Kia</strong> (2005–2016) – £100–£120</li>
+      <li><strong>Hyundai</strong> (2005–2016) – £100–£120</li>
+      <li><strong>Toyota</strong> (2002–2012) – £110–£140</li>
+      <li><strong>Nissan</strong> (2002–2012) – £100–£130</li>
+      <li><strong>Mercedes</strong> (2002–2013) – £160–£200</li>
+      <li><strong>Land / Range Rover</strong> (2002–2015) – £180–£250</li>
+      <li><strong>Other Vehicles on Request</strong> – £POA</li>
+    </ul>
+     <p style="max-width: 800px; margin: 0 auto; text-align: center;">
+      We specialise in vehicles up to 2017.<br>
+      If you have a newer model please still get in touch,<br>
+      we may still be able to help or direct you to a suitable solution. </p>
+  </div>
+
+  <p style="text-align: center; margin-top: 1.5rem;">
+    For an exact quote, <a href="https://wa.me/447826845978">message us on WhatsApp</a>.
+  </p>
+</section>
+ 
+   <div class="banner">
     <div class="stripe-yellow"></div>
     <div class="stripe-green"></div>
     <div class="stripe-red"></div>
   </div>
-
+ 
   <div class="contact">
     <h2>Contact Steve</h2>
     <p><strong>Call or WhatsApp:</strong> <a href="tel:07826845978">07826 845978</a></p>
     <p><strong>Email:</strong> <a href="mailto:sjdautokeys@gmail.com">sjdautokeys@gmail.com</a></p>
-    <a class="cta" href="https://wa.me/447826845978?text=Hi%20Steve%2C%20I'm%20interested%20in%20a%20car%20key%20replacement.%0AVehicle%20Make%3A%0AModel%3A%0AYear%3A%0AService%20Required%3A%0AWorking%20key%20available%3A%0ACan%20you%20help%3F" target="_blank">Message on WhatsApp</a>
+   <a href="https://wa.me/447826845978?text=Hi%20Steve%2C%20I'm%20interested%20in%20a%20car%20key%20replacement.%0AVehicle%20Make%3A%0AModel%3A%0AYear%3A%0AService%20Required%3A%0AWorking%20key%20available%3A%0ACan%20you%20help%3F"
+   class="cta" target="_blank">Message on WhatsApp</a>
+
   </div>
 
-  <footer>
+ <footer>
     &copy; 2025 SJD Auto Keys. All rights reserved.
   </footer>
-
-  <a href="https://wa.me/447826845978?text=Hi%20Steve%2C%20I'm%20interested%20in%20a%20car%20key%20replacement..."
-     class="whatsapp-button">💬 Message Steve</a>
-
+<a href="https://wa.me/447826845978?text=Hi%20Steve%2C%20I'm%20interested%20in%20a%20car%20key%20replacement..." 
+   style="position: fixed; bottom: 20px; right: 20px; background-color: #25d366; color: white; padding: 12px 18px; border-radius: 50px; text-decoration: none; font-weight: bold; box-shadow: 0 2px 6px rgba(0,0,0,0.3); z-index: 1000;">
+   💬 Message Steve
+</a>
 </body>
 </html>
